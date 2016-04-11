@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:rpc/rpc.dart';
 import 'package:todo/classes/task.dart';
 import 'package:todo/classes/task_request.dart';
@@ -17,7 +16,7 @@ class TodoApi {
   /// POST todo/v1/tasks
   @ApiMethod(method: 'POST', path: 'tasks')
   Task addTask(TaskRequest request) {
-    Task task = new Task.fromRequest(request);
+    Task task = new Task(request.text, request.done);
     todoList.add(task);
     return task;
   }
@@ -54,7 +53,8 @@ class TodoApi {
     });
 
     if (found != null) {
-      found.updateWithRequest(taskRequest);
+      found.text = taskRequest.text;
+      found.done = taskRequest.done;
     } else {
       throw new NotFoundError("task with id ${id.toString()} not found");
     }
