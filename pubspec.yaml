@@ -1,8 +1,7 @@
-name: 'todo'
+name: 'dart_todo'
 version: 0.0.1
-description: An absolute bare-bones web app.
-#author: Your Name <email@example.com>
-#homepage: https://www.example.com
+description: A sample todo-list app written in Dart.
+author: Matteo Rosati <mrosati@h-art.com>
 
 environment:
   sdk: '>=1.0.0 <2.0.0'
