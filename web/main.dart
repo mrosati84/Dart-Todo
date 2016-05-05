@@ -3,7 +3,7 @@
 
 import 'dart:html';
 import 'dart:convert';
-import 'package:todo/classes/task.dart';
+import 'package:dart_todo/classes/task.dart';
 
 UListElement todos = querySelector('#todos');
 UListElement done = querySelector('#done');

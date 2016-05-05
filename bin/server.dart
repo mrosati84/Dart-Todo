@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:async';
 import 'package:rpc/rpc.dart';
 import 'package:logging/logging.dart';
-import 'package:todo/classes/todo_api.dart';
-import 'package:todo/classes/todo_logger.dart';
+import 'package:dart_todo/classes/todo_api.dart';
+import 'package:dart_todo/classes/todo_logger.dart';
 
 final ApiServer _apiServer = new ApiServer(prettyPrint: true);
 final int port = 9000;

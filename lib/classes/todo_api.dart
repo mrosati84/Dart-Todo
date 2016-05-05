@@ -1,7 +1,7 @@
 import 'package:rpc/rpc.dart';
-import 'package:todo/classes/task.dart';
-import 'package:todo/classes/task_request.dart';
-import 'package:todo/classes/todo_list.dart';
+import 'package:dart_todo/classes/task.dart';
+import 'package:dart_todo/classes/task_request.dart';
+import 'package:dart_todo/classes/todo_list.dart';
 
 TodoList todoList = new TodoList();
 
